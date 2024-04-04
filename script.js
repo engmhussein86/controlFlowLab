@@ -12,7 +12,7 @@ let starting = 20;
 console.log(`Starting plants Area = ${getPlantsArea(eachPlantArea,starting)} square meters`);
 
 // The plants double in number every week.
-
+{
 let week1 = 1;//week1
 
 let plantsNumber = getPlantsNumber(week1,starting);
@@ -20,6 +20,30 @@ let plantArea = getPlantsArea(eachPlantArea,plantsNumber);
 let percentage = (plantArea/area)*100;
 console.log(`plantsNumber after one week  =${plantsNumber} , area = ${plantArea} , Percentage = ${percentage}%`);
 console.log(`the action should be taken after one week ${predictGrowth(percentage)}`);
+}
+console.log('--------------------------------------------');
+/////////////////////////////////
+{
+let week2 = 2;//week2
+
+let plantsNumber = getPlantsNumber(week2,starting);
+let plantArea = getPlantsArea(eachPlantArea,plantsNumber);
+let percentage = (plantArea/area)*100;
+console.log(`plantsNumber after two weeks  =${plantsNumber} , area = ${plantArea} , Percentage = ${percentage}%`);
+console.log(`the action should be taken after two weeks ${predictGrowth(percentage)}`);
+}
+console.log('--------------------------------------------');
+/////////////////////////////////
+{
+    let week3 = 3;//week3
+    
+    let plantsNumber = getPlantsNumber(week3,starting);
+    let plantArea = getPlantsArea(eachPlantArea,plantsNumber);
+    let percentage = (plantArea/area)*100;
+    console.log(`plantsNumber after three weeks  =${plantsNumber} , area = ${plantArea} , Percentage = ${percentage}%`);
+    console.log(`the action should be taken after three weeks ${predictGrowth(percentage)}`);
+    }
+
 
 
 /////////////// functions ////////////////////
